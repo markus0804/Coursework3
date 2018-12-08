@@ -28,6 +28,7 @@ nav a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: #363636;
+    /*WCAG white and gray contrast ratio 8.73:1, Normal text AA, AAA-pass*/
 }
 nav a:hover{
     background-color: #A10416;
@@ -97,6 +98,7 @@ footer{
     justify-content: space-between;
     font-size: 1.5em;
     color: white;
+    /*WCAG white and gray contrast ratio 8.73:1, Normal text AA, AAA-pass*/
     margin-top: -1.4vw;
 }
 
@@ -132,20 +134,23 @@ iframe{
 }
 .menu-item{
     margin: 1vw;;
-    background-color: rgba(255, 184, 51, 0.829);
-    box-shadow: 0.4vw 0.4vw 0.9vw rgba(0, 0, 0, 0.493);
+    background-color: #ffb833d3;
+    box-shadow: 0.4vw 0.4vw 0.9vw #0000007e;
     border-radius: 1vw;
     color: black;
     font-size: 1em;
     overflow: auto;
-    border:  1vw solid orange;
+    border:  1vw solid #ffa500;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
+    /*WCAG black and orange contrast ratio 10.63:1, Normal text AA, AAA-pass*/
 }
+/**/
 .menu-item > h2 {
     text-align: center;
     text-transform: uppercase;
     color: #A10416;
+     /*WCAG red and orange contrast ratio 4.78:1, large text AA, AAA-pass*/
     font-size: 5vw;
     font-family: murder;
     letter-spacing: 0.3vw;
@@ -171,7 +176,7 @@ iframe{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.815);
+    background-color: rgba(255, 255, 255, 0.816);
     padding: 1vw;
 }
 .allergy > p{
@@ -189,50 +194,64 @@ iframe{
     color: white;
     border: solid rgba(0, 0, 0, 0.329);
 }
-.form > h3{
-    font-size: 2em;
+.dateform > h3, .textform > h3, .selectform > h3, .other > h3{
+    font-size: 1.6em;
+
+}
+.dateform > p, .textform > p, .selectform > p, .other > p{
+    font-size: 1.4em;
+    line-height: 0.7;
+    margin-bottom: 0.5vw;
 }
 input[type=checkbox]{
     transform: scale(2);
 }
 .allergy > p{
     display: inline;
-    font-size: 1em;
+    font-size: 1.4em;
     margin-left: 0.5vw;
     margin-right: 1vw;
+
 }
+/*WCAG 313131c7 and white  contrast ratio 9.40:1, Normal text AA, AAA-pass*/
 select {
-    width: 10vw;;
-    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    width: 4vw;;
+    border: 0.2vw solid rgba(49, 49, 49, 0.78);
     font-size: 1em;
+    padding: 0.3vw;
 }
 input[type=date]{
     width: 90%;
-    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    border: 0.2vw solid rgba(49, 49, 49, 0.781);
     font-size: 1em;
-} 
+    padding: 0.3vw;
+}
 input[type=time]{
     width: 90%;
-    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    border: 0.2vw solid rgba(49, 49, 49, 0.781);
     font-size: 1em;
+    padding: 0.3vw;
 }
 input[type=text]{
     width: 90%;
-    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    border: 0.2vw solid rgba(49, 49, 49, 0.781);
     font-size: 1em;
+    padding: 0.3vw;
 }
 input[type=tel]{
     width: 90%;
-    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    border: 0.2vw solid rgba(49, 49, 49, 0.781);
     font-size: 1em;
+    padding: 0.3vw;
 }
 input[type=email]{
-    width: 90%;
-    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    width: 190%;
+    border: 0.2vw solid rgba(49, 49, 49, 0.781);
     font-size: 1em;
+    padding: 0.3vw;
 }
 textarea{
-    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    border: 0.2vw solid rgba(49, 49, 49, 0.781);
 }
 
 @media (max-width: 600px) {
@@ -347,51 +366,53 @@ textarea{
     .form > h3{
         font-size: 3em;
     }
+    /*WCAG 313131c7 and white  contrast ratio 9.40:1, Normal text AA, AAA-pass*/
     input[type=date]{
         width: 90%;
         padding: 3vw;
-        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border: 0.2vw solid rgba(49, 49, 49, 0.781);
         border-radius: 1vw;;
         font-size: 1em;
     } 
     input[type=time]{
         width: 90%;
         padding: 3vw;
-        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border: 0.2vw solid rgba(49, 49, 49, 0.781);
         border-radius: 1vw;;
         font-size: 1em;
     }
     input[type=text]{
         width: 90%;
         padding: 3vw;
-        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border: 0.2vw solid rgba(49, 49, 49, 0.781);
         border-radius: 1vw;;
         font-size: 1em;
     }
     input[type=tel]{
         width: 90%;
         padding: 3vw;
-        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border: 0.2vw solid #313131c7;
         border-radius: 1vw;;
         font-size: 1em;
     }
     input[type=email]{
         width: 90%;
         padding: 3vw;
-        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border: 0.2vw solid rgba(49, 49, 49, 0.781);
         border-radius: 1vw;;
         font-size: 1em;
     }
     select {
         width: 60%;
         padding: 1vw 1vw;
-        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border: 0.2vw solid rgba(49, 49, 49, 0.781);
         font-size: 1em;
         float: right;
     }
     .selectform > p{
         display: inline-flex;
         justify-content: flex-start;
+        flex-wrap: wrap;
         line-height: 0;
         width: 40%;
     }
