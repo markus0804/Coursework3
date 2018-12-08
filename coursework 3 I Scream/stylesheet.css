@@ -2,6 +2,7 @@
     font-family: murder;
     src: url(./graphics/fonts/youmurdererbb_reg.ttf);
 }
+/* jigsaw.w3.org/css-validator: No Error Found. 2 warnings unknown vendor extension *****(fix for IE)***** */
 html{
 background-image: url(graphics/wallpaper.png);
 background-attachment: fixed;
@@ -67,6 +68,7 @@ nav a:hover{
     background-image: url(./graphics/4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 section{
     grid-row: 2 / span 5;
@@ -121,6 +123,7 @@ iframe{
     grid-row: 2 / span 5;
     grid-column: 4/ span 7;
     padding: 0.5vw;
+    font-size: 1.4em;
 }
 #contact p{
     text-align: start;
@@ -135,8 +138,8 @@ iframe{
 }
 .menu-item{
     margin: 1vw;;
-    background-color: #ffb833d3;
-    box-shadow: 0.4vw 0.4vw 0.9vw #0000007e;
+    background-color: rgba(255, 184, 51, 0.827);
+    box-shadow: 0.4vw 0.4vw 0.9vw rgba(0, 0, 0, 0.494);
     border-radius: 1vw;
     color: black;
     font-size: 1em;
@@ -146,7 +149,50 @@ iframe{
     border-right: 25px solid transparent;
     /*WCAG black and orange contrast ratio 10.63:1, Normal text AA, AAA-pass*/
 }
-/**/
+.menu-item:hover{
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+/*this animation changes the color of the menu items, ice creams*/
+@keyframes color{ 
+    0%{
+        background-color: rgba(255, 184, 51, 0.827);
+        border-color: #ffa500;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    20%{
+        background-color: rgb(255, 166, 210);
+        border-color: #ff0000;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    40%{
+        background-color: rgb(14, 207, 255);
+        border-color: #0059ff;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    60%{
+        background-color: rgb(94, 255, 88);
+        border-color: #085f00;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    80%{
+        background-color: rgb(121, 111, 255);
+        border-color: #390096;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    100%{
+        background-color: rgba(255, 184, 51, 0.827);
+        border-color: #ffa500;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+}
 .menu-item > h2 {
     text-align: center;
     text-transform: uppercase;
@@ -295,7 +341,7 @@ figure{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 0.8vw;
-        margin-bottom: none;
+        margin-bottom: 0px;
         box-shadow: none;
         
     }
@@ -337,9 +383,9 @@ figure{
     #contact{
         grid-row: 2;
         grid-column: 1/ span 7;
-        padding: 1;
+        padding: 1vw;
     }
-    #contact p,{
+    #contact p{
         text-align: justify;
         font-size: 0.6em;
     }
@@ -421,7 +467,7 @@ figure{
     input[type=tel]{
         width: 90%;
         padding: 3vw;
-        border: 0.2vw solid #313131c7;
+        border: 0.2vw solid rgba(49, 49, 49, 0.78);
         border-radius: 1vw;;
         font-size: 1em;
     }
