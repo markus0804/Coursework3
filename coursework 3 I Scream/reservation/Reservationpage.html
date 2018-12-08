@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ice creams</title>
+    <title>Reservation</title>
     <link rel="stylesheet" type="text/css" href="../stylesheet.css">
 </head>
 
@@ -16,39 +16,112 @@
         <a href="../Contact page/index.html">Contact Page</a>
 
     </nav>
+
     <!--Under you will find the header element-->
+
     <div class="grid">
         <div class="box"></div>
             <header id="i_scream">
-                <h1>Contact us</h1>
+                <h1>Reservation</h1>
             </header>
             <img id="img_left" src="../graphics/logos/icecreamicon1.png" alt="header picture">
             <img id="img_right" src="../graphics/logos/icecreamicon1.png" alt="header picture">
             <!--This is the main content of the page-->
-            <form action="reservationlogger.php" method="GET">
-                <div class="textform">
-                    <p>First name:</p>
-                        <input type="text" name="Firstname" placeholder="First name:">
-                    <p>Last name:</p>
-                        <input type="text" name="Surname" placeholder="Surname:">
-                    <p>Phone number</p>
-                        <input type="text" name="Phone" placeholder="Number:">
-                    <p>e-mail</p>
-                        <input type="text" name="Phone" placeholder="Your e-mail address:">
-                </div>
-                <div>
-
-                </div>
-
-
-
-
-                <input type="" name="" placeholder="">
-            </form>
-               
-            <!--This is the footer of the page-->
         </div>
     </div>
+    <div class="formflex">
+        <form class="form" action="reservationlogger.php" method="GET">
+            <div class="dateform">
+                <h3>When will you visit?</h3>
+                <p>Date</p>
+                <input type="date" name="Date"required> </input>
+                <p>Time of day</p>
+                <input type="time" name="time"required> </input>
+            </div>
+            <div class="textform">
+                <h3>Contact info</h3>
+                <p>First name:</p>
+                <input type="text" name="Firstname" placeholder="First name:" required> </input>
+                <p>Last name:</p>
+                <input type="text" name="Surname" placeholder="Surname:" required> </input>
+                <p>Phone number</p>
+                <input type="tel" name="Phone" placeholder="Number:" required> </input>
+                <p>E-mail</p>
+                <input type="email" name="email" placeholder="Your e-mail address:" required> </input>
+            </div>
+
+            <div class="selectform">
+                <h3>Number of guests</h3>
+                <p>Adults</p>
+                <select name="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="other">Other</option>
+                </select>
+                <p>Children</p>
+                <select name="Children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="other">Other</option>
+                </select>
+                <p>Infants</p>
+                <select name="infants">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="other">
+                    <h3>Anything else?</h3>
+                    <textarea name="message" rows="20" cols="40" placeholder="text"></textarea>
+            </div>
+
+            <div class="allergy">
+                <h3>Any allergies?</h3>
+                <input type="checkbox" name="Nut" value=""> <p>Nut</p></input>
+                <input type="checkbox" name="milk" value=""> <p>Lactose</p></input>
+                <input type="checkbox" name="Eggs" value=""> <p>Eggs</p></input>
+                <input type="checkbox" name="Gluten" value=""> <p>Gluten</p></input>
+                <input type="checkbox" name="Soy" value=""> <p>Soy</p></input>
+                <input type="checkbox" name="Fruit" value=""> <p>Fruit</p> </input>
+                <input type="checkbox" name="other" value=""><p>Other, Please specify in text description</p></input>
+            </div>
+
+    </div>
+            <div class="submit">
+                <input id="submit" type="submit">
+            </div>
+        </form>
+
+
+    <!--This is the footer of the page-->
 
     <hr>
 
@@ -56,4 +129,6 @@
             <p>Images were taken from the courseworke 3 logo folder. And i made the wallpaper.</p>
             <img id="footerimg" src="../graphics/logos/icecream1.png" alt="footer picture">
     </footer>
+
+</body>
 </html>

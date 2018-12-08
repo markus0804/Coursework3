@@ -36,7 +36,7 @@ nav a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    background-color: rgba(255, 255, 255, 0.527);
+    background-color: rgba(255, 255, 255, 0.815);
 
 }
 #img_left{
@@ -92,22 +92,18 @@ section h2{
     
 }
 footer{
-    display: inline-flex;
+    display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 1.5em;
     color: white;
-    
+    margin-top: -1.4vw;
 }
-footer p{
-    margin-top:-2vw;
-}
+
 #footerimg{
-    justify-content: flex-end;
     height: 2em;
     width: auto;
-    margin-left: 3vw;
-    margin-top:-2vw;
+    margin-top: 1vw;
 }
 #maps{
     grid-row: 2 / span 5;
@@ -170,6 +166,73 @@ iframe{
 #ice-creams > h2{
     font-size: 3em;
     text-transform: capitalize;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.815);
+    padding: 1vw;
+}
+.allergy > p{
+    font-size: 1em;
+}
+.form > p{
+    font-size: 1em;
+}
+#submit{
+    width: 100%;
+    padding: 1em;;
+    font-size: 2.5em;
+    line-height: 0;
+    background-color: #A10416;
+    color: white;
+    border: solid rgba(0, 0, 0, 0.329);
+}
+.form > h3{
+    font-size: 2em;
+}
+input[type=checkbox]{
+    transform: scale(2);
+}
+.allergy > p{
+    display: inline;
+    font-size: 1em;
+    margin-left: 0.5vw;
+    margin-right: 1vw;
+}
+select {
+    width: 10vw;;
+    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    font-size: 1em;
+}
+input[type=date]{
+    width: 90%;
+    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    font-size: 1em;
+} 
+input[type=time]{
+    width: 90%;
+    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    font-size: 1em;
+}
+input[type=text]{
+    width: 90%;
+    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    font-size: 1em;
+}
+input[type=tel]{
+    width: 90%;
+    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    font-size: 1em;
+}
+input[type=email]{
+    width: 90%;
+    border: 0.2vw solid rgba(87, 87, 87, 0.295);
+    font-size: 1em;
+}
+textarea{
+    border: 0.2vw solid rgba(87, 87, 87, 0.295);
 }
 
 @media (max-width: 600px) {
@@ -262,5 +325,83 @@ iframe{
     }
     #footerimg{
        display: none;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.815);
+        padding: 1vw;
+        font-size: 1.5em
+    }
+    .allergy > p{
+        font-size: 1.5em;
+    }
+    .form > p{
+        font-size: 1.5em;
+    }
+    #submit{
+        padding: 1em;;
+        font-size: 2em;
+
+    }
+    .form > h3{
+        font-size: 3em;
+    }
+    input[type=date]{
+        width: 90%;
+        padding: 3vw;
+        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border-radius: 1vw;;
+        font-size: 1em;
+    } 
+    input[type=time]{
+        width: 90%;
+        padding: 3vw;
+        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border-radius: 1vw;;
+        font-size: 1em;
+    }
+    input[type=text]{
+        width: 90%;
+        padding: 3vw;
+        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border-radius: 1vw;;
+        font-size: 1em;
+    }
+    input[type=tel]{
+        width: 90%;
+        padding: 3vw;
+        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border-radius: 1vw;;
+        font-size: 1em;
+    }
+    input[type=email]{
+        width: 90%;
+        padding: 3vw;
+        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        border-radius: 1vw;;
+        font-size: 1em;
+    }
+    select {
+        width: 60%;
+        padding: 1vw 1vw;
+        border: 0.2vw solid rgba(87, 87, 87, 0.295);
+        font-size: 1em;
+        float: right;
+    }
+    .selectform > p{
+        display: inline-flex;
+        justify-content: flex-start;
+        line-height: 0;
+        width: 40%;
+    }
+    input[type=checkbox]{
+        transform: scale(2);
+    }
+    .allergy > p{
+        display: inline;
+        font-size: 1em;
+        margin-left: 2vw;
+        margin-right: 4vw;
     }
 }
