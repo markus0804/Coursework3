@@ -20,35 +20,34 @@
     <!--Under you will find the header element-->
 
     <div class="grid">
-        <div class="box"></div>
             <header id="i_scream">
                 <h1>Reservation</h1>
             </header>
             <img id="img_left" src="../graphics/logos/icecreamicon1.png" alt="header picture">
             <img id="img_right" src="../graphics/logos/icecreamicon1.png" alt="header picture">
             <!--This is the main content of the page-->
-        </div>
     </div>
     <div class="formflex">
         <form class="form" action="reservationlogger.php" method="post">
             <!--The post method was used so that you can't track packages and sniff out contact information-->
             <div class="dateform">
                 <h3>When will you visit?</h3>
+               <!--unsupported browsers and also Safari will get a textbox instead of Date and Time. See css line 230 and 231-->
                 <p>Date</p>
-                <input type="date" name="Date"required> </input>
+                <input type="date" name="Date" required> 
                 <p>Time of day</p>
-                <input type="time" name="time"required> </input>
+                <input type="time" name="time" required> 
             </div>
             <div class="textform">
                 <h3>Contact info</h3>
                 <p>First name:</p>
-                <input type="text" name="Firstname" placeholder="First name:" required> </input>
+                <input type="text" name="Firstname" placeholder="First name:" required> 
                 <p>Last name:</p>
-                <input type="text" name="Surname" placeholder="Surname:" required> </input>
+                <input type="text" name="Surname" placeholder="Surname:" required> 
                 <p>Phone number</p>
-                <input type="tel" name="Phone" placeholder="Number:" required> </input>
+                <input type="tel" name="Phone" placeholder="Number:" required> 
                 <p>E-mail</p>
-                <input type="email" name="email" placeholder="Your e-mail address:" required> </input>
+                <input type="email" name="email" placeholder="Your e-mail address:" required>
             </div>
             <!--i feel like there needs to be at least one adult to fill out the contact form. that's why the lowest number for adults is 1-->
             <div class="selectform">
@@ -106,22 +105,21 @@
 
             <div class="allergy">
                 <h3>Any allergies?</h3>
-                <input type="checkbox" name="Nut" value=""> <p>Nut</p></input>
-                <input type="checkbox" name="milk" value=""> <p>Lactose</p></input>
-                <input type="checkbox" name="Eggs" value=""> <p>Eggs</p></input>
-                <input type="checkbox" name="Gluten" value=""> <p>Gluten</p></input>
-                <input type="checkbox" name="Soy" value=""> <p>Soy</p></input>
-                <input type="checkbox" name="Fruit" value=""> <p>Fruit</p> </input>
-                <input type="checkbox" name="other" value=""><p>Other, Please specify in text description</p></input>
+                <input type="checkbox" name="Nut" value=""> <p>Nut</p>
+                <input type="checkbox" name="milk" value=""> <p>Lactose</p>
+                <input type="checkbox" name="Eggs" value=""> <p>Eggs</p>
+                <input type="checkbox" name="Gluten" value=""> <p>Gluten</p>
+                <input type="checkbox" name="Soy" value=""> <p>Soy</p>
+                <input type="checkbox" name="Fruit" value=""> <p>Fruit</p>
+                <input type="checkbox" name="other" value=""><p>Other, Please specify in text description</p>
             </div>
-
-    </div>
+    
             <div class="submit">
                 <input id="submit" type="submit">
             </div>
         </form>
 
-
+    </div>
     <!--This is the footer of the page-->
 
     <hr>
@@ -130,6 +128,6 @@
             <p>Images were taken from the courseworke 3 logo folder. And i made the wallpaper.</p>
             <img id="footerimg" src="../graphics/logos/icecream1.png" alt="footer picture">
     </footer>
-
+<!--https://validator.w3.org Document checking completed. No errors, 2 warnings. *******Solved***** alternative for outdated browsers and also Safari line 230 and 241 css-->
 </body>
 </html>

@@ -188,7 +188,7 @@ iframe{
 }
 #submit{
     width: 100%;
-    padding: 1em;;
+    padding: 0.8em;;
     font-size: 2.5em;
     line-height: 0;
     background-color: #A10416;
@@ -227,11 +227,21 @@ input[type=date]{
     font-size: 1em;
     padding: 0.3vw;
 }
+/*fix for the very outdated browser Internet Explorer and also the newest version of Safari, because apple does not understand compatibility*/
+input[type="date"]{
+    display:block;
+    -webkit-appearance: textfield;
+}
 input[type=time]{
     width: 90%;
     border: 0.2vw solid rgba(49, 49, 49, 0.781);
     font-size: 1em;
     padding: 0.3vw;
+}
+/*fix for the very outdated browser Internet Explorer and also the newest version of Safari, because apple does not understand compatibility*/
+input[type="time"]{
+    display:block;
+    -webkit-appearance: textfield;
 }
 input[type=text]{
     width: 90%;
@@ -267,6 +277,13 @@ figure{
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
+}
+.submit{
+    width: 100%;
+    margin-top: 1vw;
+}
+#submit:hover{
+    background-color: #363636;
 }
 @media (max-width: 600px){
     body{
